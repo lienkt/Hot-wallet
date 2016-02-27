@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hotwallet</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login_email">EMAIL</string>
+    <string name="login_password">PASSWORD</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1ecf2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTERED NUMBER"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="64dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/chooseamount_selector_edittext"/>
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AMOUNT"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="64dp"
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="34dp">
+            <LinearLayout
+                android:layout_marginTop="1.5dp"
+                android:layout_marginRight="1.5dp"
+               android:background="#E91E63"
+                android:layout_width="match_parent"
+                android:layout_height="34dp" >
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="1.5dp"
+                    android:background="#fcfafd">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/chooseamount_btrma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="A"
+                        android:textColor="#fcfafd"
+                        android:background="@drawable/chooseamount_button_pressed"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/chooseamount_btrmb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="B"
+                        android:textColor="#950e13" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/chooseamount_btrmc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="C"
+                        android:textColor="#950e13" />
+                </LinearLayout>
+                  </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/go_button"
+        android:layout_gravity="bottom"/>
+</LinearLayout>
