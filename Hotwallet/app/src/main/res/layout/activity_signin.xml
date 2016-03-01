@@ -47,7 +47,7 @@
         android:layout_marginTop="32dp"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:background="@drawable/go_button"
+        android:background="@drawable/ic_go_button"
         android:layout_gravity="bottom"/>
 
 

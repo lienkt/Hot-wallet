@@ -3,7 +3,7 @@ package thinktodo.com.hotwallet;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -12,29 +12,18 @@ import butterknife.ButterKnife;
  * Created by User on 2/27/2016.
  */
 public class ChooseAmountActivity extends Activity {
-
     @Bind(R.id.chooseamount_btrma)
-    Button chooseamountBtrma;
+    TextView chooseamountBtrma;
     @Bind(R.id.chooseamount_btrmb)
-    Button chooseamountBtrmb;
+    TextView chooseamountBtrmb;
     @Bind(R.id.chooseamount_btrmc)
-    Button chooseamountBtrmc;
+    TextView chooseamountBtrmc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chooseamount);
-        ButterKnife.bind(this);
-
-//        chooseamountBtrma.setTextColor(getResources().getColor(R.color.colorWhite));
-//        chooseamountBtrma.setBackgroundResource(R.drawable.chooseamount_button_pressed);
-//
-//        chooseamountBtrmb.setTextColor(getResources().getColor(R.color.colorRed));
-//        chooseamountBtrmb.setBackgroundResource(R.drawable.chooseamount_button_normal);
-//
-//        chooseamountBtrmc.setTextColor(Color.parseColor("#950e13"));
-//        chooseamountBtrmc.setBackground(getDrawable(R.drawable.chooseamount_button_normal));
-
+        ButterKnife.bind(ChooseAmountActivity.this);
 
         chooseamountBtrma.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,15 +80,4 @@ public class ChooseAmountActivity extends Activity {
     }
 
 
-//    @OnClick({R.id.chooseamount_btrma, R.id.chooseamount_btrmb, R.id.chooseamount_btrmc})
-//    public void onClick(View view) {
-//        switch (view.getId()) {
-//            case R.id.chooseamount_btrma:
-//                break;
-//            case R.id.chooseamount_btrmb:
-//                break;
-//            case R.id.chooseamount_btrmc:
-//                break;
-//        }
-//    }
 }

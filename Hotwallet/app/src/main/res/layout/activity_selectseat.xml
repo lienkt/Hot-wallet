@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+
 
     <TextView
         android:id="@+id/selection"
@@ -9,10 +16,23 @@
         android:layout_height="wrap_content"
         android:background="#8A9D6F"
         android:hint="Slected here" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFF00"
+        android:text="Screen"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
     <GridView
         android:id="@+id/gridview1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:verticalSpacing="10dp"
         android:horizontalSpacing="10dp"
         android:columnWidth="90dp"
@@ -23,4 +43,72 @@
 
     </GridView>
 
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="#304FFE"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Seat"
+                android:textColor="#fff"
+                android:paddingLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="#4CAF50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Seat"
+                android:textColor="#fff"
+                android:paddingLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="#E65100"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Seat"
+                android:textColor="#fff"
+                android:paddingLeft="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectseat_next"
+        android:text="tiếp theo"/>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectseat_back"
+        android:text="quay lại"/>
 </LinearLayout>
+</ScrollView>
